@@ -1,0 +1,123 @@
+* {
+   margin: 0; 
+   padding: 0; 
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1E3932;
+    padding-top: 20px; /* adiciona espaçamento */
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.conteudo {
+    width: 100%; /* largura */
+    display: flex;
+    justify-content: space-between; /* adiciona espaço entre os itens */
+    align-items: center; /* alinha  tudo ao centro */
+}
+
+.caixa-texto {
+    width: 600px;
+}
+
+input#email {
+    display: flex;
+    flex-direction: column;
+    background: #39514B;
+    margin: 10px 0px 10px 0px;
+    padding: 14px 0px 14px 8px;
+    border-radius: 8px;
+    width: 390px;
+    height: 25px;
+    font-weight: normal;
+}
+
+#email:focus {
+    outline: none; /* Remove o contorno ao redor do campo focado */
+}
+
+#email::placeholder {
+    color: white;
+   
+}
+
+.form-subscribe label {
+    color: white;
+}
+
+.caixa-imagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end; /* joga item todo pro lado */
+    margin-top: 250px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* joga itens para o centro */
+}
+
+button:hover {
+    background-color: #017142b6;
+}
+
+button {
+    background-color: #017143; /* cor de fundo */
+    color: #ffffff; /* cor do texto */
+    border: none; /* borda */
+    padding: 11px 20px 11px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+h2 {
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+span {
+    color: #017143;
+    font-size: 70px; /* muda tamanho do texto */
+    font-weight: 900;  /* muda a grossura do texto */
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.starbucks {
+    width: 340px;
+    z-index: 2; /* define se o item está a frente ou atrás */
+}
+
+.copo-pequeno {
+    width: 60px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.copo-pequeno:hover {
+    transform: translateY(-35px);
+}
+
+.circulo {
+    background: #017143;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px);
+}
